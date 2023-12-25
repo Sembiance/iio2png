@@ -1,2 +1,4 @@
 #!/bin/bash
-java -cp target/iio2png-1.0.0.jar com.dexvert.App $@
+
+cd "$(dirname "$(readlink -f "$0")")" || exit
+java -jar build/jar/iio2png-1.0.0.jar "$@"
