@@ -1,0 +1,3 @@
+[submodule "TwelveMonkeys"]
+	path = TwelveMonkeys
+	url = https://github.com/haraldk/TwelveMonkeys.git
