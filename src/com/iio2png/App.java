@@ -99,7 +99,7 @@ public class App
 					try
 					{
 						BufferedImage outputImage = reader.read(i);
-						File outputFile = new File(outputDir, outputBaseName + (numImages==1 ? "" : "_" + i) + ".png");
+						File outputFile = new File(outputDir, (numImages==1 ? outputBaseName : i) + ".png");
 						if(!ImageIO.write(outputImage, "png", outputFile))
 						{
 							System.out.println("ERROR: Failed writing image " + i + " to file");
